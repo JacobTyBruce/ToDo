@@ -7,12 +7,12 @@ var opened = true;
 openSidebar.addEventListener('click', (e) => {
     console.log(e)
     console.log(opened)
-    openSidebar.innerHTML = (opened) ? "arrow_left" : "arrow_right_alt"
+    openSidebar.innerHTML = (opened) ? "arrow_right_alt" : "arrow_left";
     anime({
         targets: 'aside',
         translateX: (opened) ? "-40vw" : '0',
         easing: 'linear',
-        duration: 300
+        duration: 250
     })
     anime({
         targets: 'main',

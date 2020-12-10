@@ -31,8 +31,15 @@ aside {
     top: 0;
 }
 
-aside div {
-    width: 100%;
+aside div .add-task {
+    position: absolute;
+    bottom: 0px;
+    font-size: 75px;
+    transform: translateX(-50%);
+}
+
+.add-task:hover {
+    cursor: pointer;
 }
 
 main {
@@ -41,4 +48,30 @@ main {
     position: absolute;
     left: 40vw;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+}
+.task-heading {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.task-heading select {
+    width: 20%;
+}
+
+.task-body {
+    width: 100%;
+}
+
+.task {
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    background:white;
+    list-style: none;
 }
